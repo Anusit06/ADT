@@ -4,19 +4,25 @@ public class IntegetSetTest {
         int passed = 0;
         int failed = 0;
 
+        // Test 1: การสร้าง, เพิ่มข้อมูล, และการเรียงลำดับ
+        System.out.println("\n--- Testing add() and sorting ---");
         IntegerSet a = new IntegerSet();
-        a.add(50);
-        a.add(70);
+        a.add(10);
         a.add(40);
-        a.add(60);
-        String s = "[40, 50, 60, 70]";
-        if (a.toString().equals(s)) {
-           System.out.print("Pass");
-           passed++;
-        }else{
-
-            System.out.print("Fail"+a.toString());
-        }
+        a.add(30);
+        String expected1 = "[10, 30, 40}";
+        if (a.toString().equals(expected1)) {
+            System.out.println("PASSED: Add and sort works correctly.");
+            passed++;
+        } else {
+            System.out.println("FAILED: Expected " + expected1 + " but got " + a.toString());
+            failed++;
+        }   
+       
+       
+       
+       
+       
        
        
        

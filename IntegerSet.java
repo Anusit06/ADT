@@ -68,8 +68,11 @@ public class IntegerSet {
         *@param x ตัวเลขที่ต้องการลบ
      */
     public void remove(Integer x){
-        Number.remove(x);
-        CheckRep();
+        if (Number.contains(x) && Number != null && x != null ) {
+            Number.remove(x);
+             
+        }
+       CheckRep();
     }
 
     /*
